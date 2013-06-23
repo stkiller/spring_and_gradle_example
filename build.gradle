@@ -1,0 +1,17 @@
+apply plugin : 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.springframework:spring-context:3.2.3.RELEASE'){
+        exclude(group : 'commons-logging')
+    }
+    compile group: 'org.slf4j', name: 'jcl-over-slf4j', version: '1.7.5'
+    compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.5'
+    compile group: 'org.slf4j', name: 'slf4j-api'
+    compile group: 'log4j', name: 'log4j'
+
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
