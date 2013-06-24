@@ -4,7 +4,7 @@
     <entry_points version="2.0" />
   </component>
   <component name="ProjectKey">
-    <option name="state" value="project://20a61cdd-a3ce-4a39-8e4b-070286ff7fe2" />
+    <option name="state" value="git@github.com:stkiller/spring_and_gradle_example.git" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />

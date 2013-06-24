@@ -7,9 +7,8 @@
 
     <bean id="defPrinter" parent="namePrinterInterface" class="com.stkiller.example.output.DefaultNamePrinter"/>
 
-    <bean id="helloBean" class="com.stkiller.example.DefaultHelloWorld">
-        <constructor-arg value="StKiller"/>
-        <constructor-arg ref="defPrinter"/>
+    <bean id="helloBean" class="com.stkiller.example.DefaultHelloWorld" init-method="init">
+        <property name="namePrinter" ref="defPrinter"/>
     </bean>
 
 </beans>
