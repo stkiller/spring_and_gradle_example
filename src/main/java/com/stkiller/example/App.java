@@ -11,7 +11,7 @@ public class App {
     public static void main(String[] args) {
         final ApplicationContext context = new ClassPathXmlApplicationContext("Spring-Module.xml");
 
-        final DefaultHelloWorld obj = context.getBean("helloBean", DefaultHelloWorld.class);
-        obj.printHello("StKiller");
+        final HelloWorld greetingBean = context.getBean("greetingBean", HelloWorld.class);
+        greetingBean.printHello("StKiller");
     }
 }
