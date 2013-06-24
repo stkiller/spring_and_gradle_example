@@ -1,5 +1,6 @@
 package com.stkiller.example;
 
+import com.stkiller.example.engine.HelloWorld;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

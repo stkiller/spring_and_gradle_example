@@ -5,7 +5,7 @@
 
     <bean id="defPrinter" class="com.stkiller.example.output.DefaultNamePrinter"/>
 
-    <bean id="greetingBean" class="com.stkiller.example.DefaultHelloWorld" init-method="init">
+    <bean id="greetingBean" class="com.stkiller.example.engine.DefaultHelloWorld" init-method="init">
         <property name="namePrinter" ref="defPrinter"/>
     </bean>
 

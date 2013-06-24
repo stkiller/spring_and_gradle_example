@@ -1,4 +1,4 @@
-package com.stkiller.example;
+package com.stkiller.example.engine;
 
 /**
  * @author apodoprigora (24/06/2013)

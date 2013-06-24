@@ -1,4 +1,4 @@
-package com.stkiller.example;
+package com.stkiller.example.engine;
 
 import com.stkiller.example.output.NamePrinter;
 import org.slf4j.Logger;
