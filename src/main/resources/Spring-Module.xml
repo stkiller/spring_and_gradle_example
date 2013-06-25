@@ -5,8 +5,19 @@
 
     <bean id="defPrinter" class="com.stkiller.example.output.DefaultNamePrinter"/>
 
-    <bean id="greetingBean" class="com.stkiller.example.engine.DefaultHelloWorld" init-method="init">
-        <property name="namePrinter" ref="defPrinter"/>
+    <bean id="greetingBean" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <property name="target">
+            <bean id="target" class="com.stkiller.example.engine.DefaultHelloWorld">
+                <property name="namePrinter" ref="defPrinter"/>
+            </bean>
+        </property>
+        <property name="interceptorNames">
+            <list>
+                <value>advice</value>
+            </list>
+        </property>
     </bean>
+
+    <bean id="advice" class="com.stkiller.example.aop.DateTimeAdvice"/>
 
 </beans>
