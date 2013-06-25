@@ -9,4 +9,6 @@ out/
 .idea/workspace.xml
 .idea/tasks.xml
 .idea/libraries/
+.idea/misc.xml
+
 atlassian-ide-plugin.xml
